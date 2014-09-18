@@ -5,6 +5,6 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]]
   :resource-paths ["resources/base"]
-  :profiles {:dev {:resource-paths ["resources/dev" "resources/base"]}
-             :prod {:resource-paths ["resources/prod" "resources/base"]}}
-  )
+  :profiles {:dev {:resource-paths ["resources/dev"]}
+             :prod {:resource-paths ["resources/prod"]}}
+  :plugins [[lein-pprint "1.1.1"]])
