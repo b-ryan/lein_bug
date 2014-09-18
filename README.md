@@ -32,3 +32,13 @@ $ jar tvf target/xyz-0.1.0-SNAPSHOT.jar | grep '\.txt'
 ```
 
 Oh noes!
+
+If you repeat the above using `lein 2.4.3` everything is the same except
+the jar contains both files:
+
+
+```bash
+$ jar tvf target/xyz-0.1.0-SNAPSHOT.jar | grep '\.txt'
+     5 Thu Sep 18 16:05:00 EDT 2014 prod.txt
+     5 Thu Sep 18 16:04:42 EDT 2014 base.txt
+```
